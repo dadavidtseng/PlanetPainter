@@ -1,0 +1,16 @@
+{
+    "name": "Project.Misc",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f38759b2c28304b40b1abf80eb52dabd"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

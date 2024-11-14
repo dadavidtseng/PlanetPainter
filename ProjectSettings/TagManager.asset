@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Wall
+  - WaterBox
+  - BlockerBox_Red
+  - BlockerBox_Blue
+  - BlockerBox_Yellow
+  - PainterBox_Red
+  - PainterBox_Blue
+  - PainterBox_Yellow
+  - Door
+  - Switch
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Post Processing
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Border
+    uniqueID: 853759163
+    locked: 0
+  - name: UnPaintable
+    uniqueID: 2832096767
+    locked: 0
+  - name: Paintable
+    uniqueID: 4137180655
+    locked: 0
+  - name: Floor
+    uniqueID: 2998871447
+    locked: 0
+  - name: PaintSplash
+    uniqueID: 3195869891
+    locked: 0
+  - name: FloorFrame
+    uniqueID: 2785542643
+    locked: 0
+  - name: Wall
+    uniqueID: 431587357
+    locked: 0
+  - name: WaterBox
+    uniqueID: 1171260529
+    locked: 0
+  - name: BlockerBox_Red
+    uniqueID: 1467232907
+    locked: 0
+  - name: BlockerBox_Blue
+    uniqueID: 2243036909
+    locked: 0
+  - name: BlockerBox_Yellow
+    uniqueID: 910394799
+    locked: 0
+  - name: PainterBox_Red
+    uniqueID: 733124081
+    locked: 0
+  - name: PainterBox_Blue
+    uniqueID: 2088094383
+    locked: 0
+  - name: PainterBox_Yellow
+    uniqueID: 1390578177
+    locked: 0
+  - name: Door
+    uniqueID: 3213406395
+    locked: 0
+  - name: Switch
+    uniqueID: 4083327329
+    locked: 0
+  - name: Player
+    uniqueID: 4281126159
+    locked: 0
+  - name: Frame
+    uniqueID: 51095719
+    locked: 0
+  - name: UI
+    uniqueID: 1819259293
+    locked: 0

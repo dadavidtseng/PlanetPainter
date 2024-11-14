@@ -1,0 +1,22 @@
+{
+    "name": "Project.TitleScene",
+    "rootNamespace": "",
+    "references": [
+        "GUID:599571a9d22c42d42902f5b1c76f6194",
+        "GUID:300d5d73270197e4c9764aa64b27c31b",
+        "GUID:f38759b2c28304b40b1abf80eb52dabd",
+        "GUID:7bfc2ccf2a8d8ee4eb6aff5b78372481",
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4",
+        "GUID:078e7145c1d03c1419ee4d28df2bde65",
+        "GUID:38c0bfee765dbc340b7838c9a12c7632"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,24 @@
+{
+    "name": "Project.Door",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f38759b2c28304b40b1abf80eb52dabd",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:d3ff4913be8a2a94091fdf38456d75ff",
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4",
+        "GUID:0d048b5ce425e3e46919c8f3d2607feb",
+        "GUID:9f15b66c892b97a45bb955989f1dd107",
+        "GUID:1cd9418e5cc328847b5f7df3a39c8030",
+        "GUID:790a5a7e2e17ffe42bce58d99e06b750",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

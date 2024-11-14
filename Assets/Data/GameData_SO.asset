@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4cc539aa268c244e9d05da6ad8bc2ee, type: 3}
+  m_Name: GameData_SO
+  m_EditorClassIdentifier: 
+  levelSettings:
+    levelObjects:
+    - {fileID: 3346415589298122145, guid: fc264c1620e061a43a76766d6796947e, type: 3}
+    - {fileID: 5828889084123328721, guid: c4291c668c5226a479b04168fc50f83c, type: 3}
+    - {fileID: 5828889084123328721, guid: 2da3e654dc5addd4aa31406b87340aed, type: 3}
+    - {fileID: 5828889084123328721, guid: 23e723b62eb50b6469f87b1c967503b5, type: 3}
+    - {fileID: 5828889084123328721, guid: 38f2efd84136b0e4191e1b8997cc46a6, type: 3}
+    - {fileID: 5828889084123328721, guid: 5cbf5c76c23f4cf4c937ee85c81f07da, type: 3}
+    - {fileID: 5828889084123328721, guid: 2746fece2cca1af40a1be216ea812da3, type: 3}
+    - {fileID: 5828889084123328721, guid: 2ae9dcf88d7b8694cbf861b235fa5093, type: 3}
+  playerSettings:
+    spawnPosition:
+    - {x: -5, y: 3}
+    - {x: 5.5, y: -0.5}
+    - {x: 0, y: 0}
+    - {x: 8, y: -4.5}
+    - {x: -4.5, y: -4}
+    - {x: 17, y: 13}
+    - {x: -3.5, y: -1}
+    - {x: 16.5, y: -0.5}
+  doorSettings:
+    doorInfos:
+    - doorCount: 1
+      doorIndex: 00000000
+      registeredSwitchIndex: 00000000
+      doorColorIndex: 00000000
+      spawnPosition:
+      - {x: -7, y: 6}
+    - doorCount: 2
+      doorIndex: 0000000001000000
+      registeredSwitchIndex: 0000000000000000
+      doorColorIndex: 0000000001000000
+      spawnPosition:
+      - {x: -4, y: 0}
+      - {x: 12, y: 0}
+    - doorCount: 2
+      doorIndex: 0000000001000000
+      registeredSwitchIndex: 0000000000000000
+      doorColorIndex: 0000000001000000
+      spawnPosition:
+      - {x: -7, y: -1}
+      - {x: 0, y: 6}
+    - doorCount: 3
+      doorIndex: 000000000100000002000000
+      registeredSwitchIndex: 000000000000000000000000
+      doorColorIndex: 010000000000000002000000
+      spawnPosition:
+      - {x: -8.5, y: 2}
+      - {x: -3, y: -2.5}
+      - {x: 12, y: 3}
+    - doorCount: 3
+      doorIndex: 000000000100000002000000
+      registeredSwitchIndex: 000000000000000000000000
+      doorColorIndex: 010000000000000002000000
+      spawnPosition:
+      - {x: 17, y: 8}
+      - {x: 17, y: 16}
+      - {x: 3, y: 3}
+    - doorCount: 3
+      doorIndex: 000000000100000002000000
+      registeredSwitchIndex: 000000000000000000000000
+      doorColorIndex: 020000000000000001000000
+      spawnPosition:
+      - {x: -12, y: 1}
+      - {x: 0, y: 2}
+      - {x: 18, y: -1}
+    - doorCount: 2
+      doorIndex: 0000000001000000
+      registeredSwitchIndex: 0000000000000000
+      doorColorIndex: 0000000001000000
+      spawnPosition:
+      - {x: -6, y: -1}
+      - {x: 16.5, y: 16}
+    - doorCount: 3
+      doorIndex: 000000000100000002000000
+      registeredSwitchIndex: 000000000000000000000000
+      doorColorIndex: 020000000100000000000000
+      spawnPosition:
+      - {x: -2, y: -1}
+      - {x: 16, y: 3}
+      - {x: 17, y: 17}
+  switchSettings:
+    switchInfos:
+    - switchCount: 1
+      switchIndex: 00000000
+      switchColorIndex: 03000000
+      spawnPosition:
+      - {x: -9, y: -3}
+    - switchCount: 1
+      switchIndex: 00000000
+      switchColorIndex: 03000000
+      spawnPosition:
+      - {x: 0, y: 0}
+    - switchCount: 1
+      switchIndex: 00000000
+      switchColorIndex: 03000000
+      spawnPosition:
+      - {x: 4, y: 0}
+    - switchCount: 1
+      switchIndex: 00000000
+      switchColorIndex: 03000000
+      spawnPosition:
+      - {x: -1, y: 4.5}
+    - switchCount: 1
+      switchIndex: 00000000
+      switchColorIndex: 03000000
+      spawnPosition:
+      - {x: 17, y: 4}
+    - switchCount: 1
+      switchIndex: 00000000
+      switchColorIndex: 03000000
+      spawnPosition:
+      - {x: 5, y: -5}
+    - switchCount: 1
+      switchIndex: 00000000
+      switchColorIndex: 03000000
+      spawnPosition:
+      - {x: 19, y: -4}
+    - switchCount: 1
+      switchIndex: 00000000
+      switchColorIndex: 03000000
+      spawnPosition:
+      - {x: 17, y: 8}

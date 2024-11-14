@@ -1,0 +1,23 @@
+{
+    "name": "Project.Player",
+    "rootNamespace": "",
+    "references": [
+        "Zenject",
+        "DOTween.Modules",
+        "Project.Data",
+        "Project.Misc",
+        "Project.Game",
+        "Project.Audio",
+        "Project.Camera",
+        "Project.SceneTransition"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

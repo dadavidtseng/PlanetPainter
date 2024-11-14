@@ -1,0 +1,20 @@
+{
+    "name": "Project.Switch",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4",
+        "GUID:d3ff4913be8a2a94091fdf38456d75ff",
+        "GUID:f38759b2c28304b40b1abf80eb52dabd",
+        "GUID:9f15b66c892b97a45bb955989f1dd107",
+        "GUID:790a5a7e2e17ffe42bce58d99e06b750"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
