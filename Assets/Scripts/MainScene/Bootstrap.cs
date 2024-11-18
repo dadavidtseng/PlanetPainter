@@ -10,7 +10,7 @@ namespace MainScene
 
         private void Start()
         {
-            sceneService.LoadScene(0);
+            sceneService.LoadScene(1);
         }
     }
 }

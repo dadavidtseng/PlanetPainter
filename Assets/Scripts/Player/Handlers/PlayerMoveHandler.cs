@@ -83,10 +83,10 @@ namespace Player
         {
             return stateHandler.GetPreState() switch
                    {
-                       PlayerState.IdleUp    => Vector3.down  * 0.2f,
-                       PlayerState.IdleDown  => Vector3.up    * 0.2f,
-                       PlayerState.IdleLeft  => Vector3.right * 0.2f,
-                       PlayerState.IdleRight => Vector3.left  * 0.2f,
+                       PlayerState.IdleUp    => Vector3.down  * 0.5f,
+                       PlayerState.IdleDown  => Vector3.up    * 0.5f,
+                       PlayerState.IdleLeft  => Vector3.right * 0.5f,
+                       PlayerState.IdleRight => Vector3.left  * 0.5f,
                        _                     => Vector3.zero
                    };
         }

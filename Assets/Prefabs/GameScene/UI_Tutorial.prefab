@@ -248,7 +248,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -300}
-  m_SizeDelta: {x: 0, y: 175}
+  m_SizeDelta: {x: -160, y: 175}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4340326011349531065
 CanvasRenderer:
@@ -278,8 +278,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u201CCosmo\u2019s landed on a new planet! Use the D-Pad on the bottom
-    left to move him around.\u201D "
+  m_text: 'Walking on colored mushrooms lets Cosmo paint with those colors! Cosmo
+    can only paint with one color at a time, so choose your colors carefully. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 51edb906d624da444ad4c7cc92dfa75b, type: 2}
   m_sharedMaterial: {fileID: -7735410407542660463, guid: 51edb906d624da444ad4c7cc92dfa75b, type: 2}
@@ -384,7 +384,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 960, y: 600}
+  m_SizeDelta: {x: 1104, y: 883.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3482161548841176445
 CanvasRenderer:
@@ -414,7 +414,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -152698481, guid: fbec92b2ee4966649ae8e5c5cc6c16f9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 33f8b70cea4dcc84fba0ffcbd7b9655c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -567,27 +567,22 @@ MonoBehaviour:
   tutorialImg: {fileID: 4921381671511708356}
   tutorialText: {fileID: 7598727660627637995}
   tutorialSprites:
-  - {fileID: -152698481, guid: fbec92b2ee4966649ae8e5c5cc6c16f9, type: 3}
-  - {fileID: -1060127999, guid: 6c1325c6c780ac5408c89aea30f69747, type: 3}
-  - {fileID: -2017551630, guid: 150f524db0e2fbd488f40dc7394ea1f5, type: 3}
-  - {fileID: -1218078295, guid: dfca53382cf83ec4d92138fe32f06a30, type: 3}
-  - {fileID: -68184770, guid: 4d6bd0fc0f4d3d840ba1891e84ebe345, type: 3}
-  - {fileID: -1341441356, guid: cb9512cc195b894429ed961a6a4e44cf, type: 3}
-  - {fileID: -1914914940, guid: 35fd7f4ab410d0645859dfce0d3359f9, type: 3}
+  - {fileID: 21300000, guid: 33f8b70cea4dcc84fba0ffcbd7b9655c, type: 3}
+  - {fileID: 21300000, guid: 11f81b61331beaf4ab541abc39e44982, type: 3}
+  - {fileID: 21300000, guid: 319b0e5eaaf38574294e8dc6bf4a99d2, type: 3}
+  - {fileID: 21300000, guid: 7debe021d4be2cb4cb6d13e1ffbc9363, type: 3}
+  - {fileID: 21300000, guid: 4ad40a0f9e1e04246b85cf315ecb04bd, type: 3}
   tutorialContent:
-  - "\u201CCosmo\u2019s landed on a new planet! Use the D-Pad on the bottom left
-    to move him around.\u201D    "
-  - "\u201CWalking on colored tiles lets Cosmo absorb those colors. Walk over the
-    spilled red paint to let Cosmo paint the world red.\u201D "
-  - 'Each door is locked by a switch, find the right color and the switch to unlock
-    it! Press the interact button when near an unlocked door to open it. '
-  - "Negative grid (water/blocker)   \u201CAvoid the water! Water erases Cosmo\u2019s
-    paint color when he walks on it.\u201D "
+  - 'Walking on colored mushrooms lets Cosmo paint with those colors! Cosmo can only
+    paint with one color at a time, so choose your colors carefully. '
   - 'The world is full of dangerous things to Cosmo, these blockers stop Cosmo in
-    his tracks unless he has the right color to pass right through '
+    his tracks unless he has the right color to pass right through. '
+  - "Avoid the water! Water washes Cosmo\u2019s paint color off when he walks on
+    it. "
+  - 'Doors are locked by a switch; find the right color and the switch to unlock
+    it. Press the interact button when near an unlocked door to open it. '
   - 'Find these switches to unlock different colored doors. Try interacting with
     them while Cosmo is different colors to see what happens! '
-  - 'Explore the world to find and unlock different colors that Cosmo can paint with! '
   lastBtnText: {fileID: 5725009160620949586}
   nextBtnText: {fileID: 2244463350870615532}
 --- !u!1 &5692984245481115370
@@ -757,7 +752,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -75}
+  m_AnchoredPosition: {x: 0, y: -50}
   m_SizeDelta: {x: 300, y: 90}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &7195525354269411183
