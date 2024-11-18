@@ -1,4 +1,5 @@
 using Audio;
+using Data;
 using Game;
 using DG.Tweening;
 using TMPro;
@@ -12,6 +13,7 @@ namespace GameScene
     {
         [Inject] private readonly IAudioService audioService;
         [Inject] private readonly IGameService  gameService;
+        [Inject] private readonly GameData      gameData;
 
         [SerializeField] private CanvasGroup     canvasGroup;
         [SerializeField] private RectTransform   groupTrans;
@@ -24,8 +26,14 @@ namespace GameScene
 
         private int progress;
 
-        private void Start()
+        private void Awake()
         {
+            if (gameData.difficulty != 0)
+            {
+                gameService.ChangeState(GameState.Game);
+                return;
+            }
+
             SetAppear(true);
         }
 
@@ -35,7 +43,7 @@ namespace GameScene
 
             progress += delta;
 
-            if (progress is -1 or 7)
+            if (progress is -1 or 5)
             {
                 SetAppear(false);
                 gameService.ChangeState(GameState.Game);
@@ -48,12 +56,12 @@ namespace GameScene
 
             SetButtonText();
         }
-        
+
         //  TODO: BUG FIX
         private void SetButtonText()
         {
             lastBtnText.text = progress == 0 ? "Skip Tutorial" : "Previous Page";
-            nextBtnText.text = progress == 6 ? "Finish Tutorial" : "Next Page";
+            nextBtnText.text = progress == 4 ? "Finish Tutorial" : "Next Page";
         }
 
         private void SetAppear(bool IsOn)

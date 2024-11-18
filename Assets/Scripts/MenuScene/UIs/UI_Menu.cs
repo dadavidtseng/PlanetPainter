@@ -4,6 +4,7 @@ using Menu;
 using Misc;
 using SceneTransition;
 using UnityEngine;
+using UnityEngine.UI;
 using Zenject;
 
 namespace MenuScene
@@ -17,10 +18,17 @@ namespace MenuScene
         [Inject] private readonly ISceneService sceneService;
 
         [SerializeField] private AudioClip menuBgm;
+        [SerializeField] private Button[]  buttons;
 
         private void Awake()
         {
             audioService.PlayBackgroundMusic(menuBgm);
+
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                if (i > gameData.difficulty)
+                    buttons[i].interactable = false;
+            }
         }
 
         private void OnEnable()
@@ -47,6 +55,7 @@ namespace MenuScene
             audioService.PlayButtonClickAudio();
 
             gameData.SetDifficulty(levelIndex);
+
             sceneService.LoadScene(3);
         }
 

@@ -1185,6 +1185,15 @@ MonoBehaviour:
   canvasGroup: {fileID: 1189244294289402652}
   groupTrans: {fileID: 7324118923631159720}
   menuBgm: {fileID: 8300000, guid: a586eeebef6ff464bb7c30664ba270be, type: 3}
+  buttons:
+  - {fileID: 922008976113521168}
+  - {fileID: 1879509151935338232}
+  - {fileID: 3956491031362635157}
+  - {fileID: 1170850445107230936}
+  - {fileID: 4314230981387954295}
+  - {fileID: 1170780727345213701}
+  - {fileID: 3246986147348184886}
+  - {fileID: 9044957885174705799}
 --- !u!1 &3557377594816771199
 GameObject:
   m_ObjectHideFlags: 0
