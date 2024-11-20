@@ -67,7 +67,7 @@ namespace GameScene
         {
             var paintPercentage = mapRepository.GetMapService().GetPaintPercentage();
 
-            resultTitleText.text = $"Level0{gameData.difficulty + 1} Finished!";
+            resultTitleText.text = $"Level {gameData.difficulty + 1} Finished!";
             resultText.text      = $"Your total paint percentage is\n{paintPercentage}%";
 
             if (paintPercentage > 75)
