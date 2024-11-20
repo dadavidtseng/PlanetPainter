@@ -80,7 +80,7 @@ namespace GameScene
                                            starMasks[1].padding = new Vector4(0, 0, 0, 0);
                                            starMasks[2].padding = new Vector4(0, 0, 0, 0);
                                            starMasks[3].padding =
-                                               new Vector4(0, 0, 0, 200.0f * (paintPercentage - 75) / 100.0f);
+                                               new Vector4(0, 0, 0, 200.0f * (1-(paintPercentage - 75) / 100.0f));
                                            starImages[0].DOFade(1.0f, 0.5f);
                                            starImages[1].DOFade(1.0f, 0.5f);
                                            starImages[2].DOFade(1.0f, 0.5f);
@@ -103,7 +103,7 @@ namespace GameScene
                                            starMasks[0].padding = new Vector4(0, 0, 0, 0);
                                            starMasks[1].padding = new Vector4(0, 0, 0, 0);
                                            starMasks[2].padding =
-                                               new Vector4(0, 0, 0, 200.0f * (paintPercentage - 50) / 100.0f);
+                                               new Vector4(0, 0, 0, 200.0f * (1-(paintPercentage - 50) / 25.0f));
                                            starImages[0].DOFade(1.0f, 0.5f);
                                            starImages[1].DOFade(1.0f, 0.5f);
                                            starImages[2].DOFade(1.0f, 0.5f);
@@ -123,7 +123,7 @@ namespace GameScene
                                        {
                                            starMasks[0].padding = new Vector4(0, 0, 0, 0);
                                            starMasks[1].padding =
-                                               new Vector4(0, 0, 0, 200.0f * (paintPercentage - 25) / 100.0f);
+                                               new Vector4(0, 0, 0, 200.0f * (1-(paintPercentage - 25) / 25.0f));
                                            starImages[0].DOFade(1.0f, 0.5f);
                                            starImages[1].DOFade(1.0f, 0.5f);
                                            starImages[0].transform.DOScale(1.0f, 0.5f).SetEase(Ease.OutBounce);
@@ -134,7 +134,7 @@ namespace GameScene
             }
             else
             {
-                starMasks[0].padding = new Vector4(0, 0, 0, 200.0f * paintPercentage / 100.0f);
+                starMasks[0].padding = new Vector4(0, 0, 0, 200.0f * (1-paintPercentage / 25.0f));
                 starImages[0].DOFade(1.0f, 0.5f);
                 starImages[0].transform.DOScale(1.0f, 0.5f).SetEase(Ease.OutBounce);
                 audioService.PlayOneShotAudio(resultMushroomAudioSource,
