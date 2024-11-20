@@ -1,7 +1,7 @@
 {
     "name": "Project.Camera",
     "rootNamespace": "",
-    "references": [],
+    "references": ["GUID:790a5a7e2e17ffe42bce58d99e06b750"],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

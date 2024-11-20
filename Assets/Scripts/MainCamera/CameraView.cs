@@ -1,10 +1,23 @@
+using System;
+using System.Collections.Generic;
+using Data;
 using UnityEngine;
+using Zenject;
 
 namespace MainCamera
 {
     public class CameraView : MonoBehaviour
     {
-        [SerializeField] private new Camera camera;
+        [Inject] private readonly GameData gameData;
+        
+        [SerializeField] private new Camera         camera;
+        [SerializeField] private     SpriteRenderer cameraFrame;
+        [SerializeField] private     Sprite[]   targetSpriteList;
+
+        private void Start()
+        {
+            cameraFrame.sprite = targetSpriteList[gameData.difficulty];
+        }
 
         public void SetCameraPosition(Vector3 targetPosition)
         {

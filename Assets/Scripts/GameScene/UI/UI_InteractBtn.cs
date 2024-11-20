@@ -1,6 +1,7 @@
 ﻿using Audio;
 using DG.Tweening;
 using Door;
+using Game;
 using Player;
 using Switch;
 using UnityEngine;
@@ -12,6 +13,7 @@ namespace GameScene
     {
         [Inject] private IAudioService    audioService;
         [Inject] private IPlayerService   playerService;
+        [Inject] private IGameService     gameService;
         [Inject] private DoorRepository   doorRepository;
         [Inject] private SwitchRepository switchRepository;
 
@@ -40,11 +42,14 @@ namespace GameScene
 
                 doorFacade.Interact();
 
-                DOTween.Sequence()
-                       .AppendCallback(() => playerService.SetPaintingAnimationTrigger(true))
-                       .JoinCallback(()=>audioService.PlayOneShotAudio(interactAudioSource, doorSound))
-                       .AppendInterval(2.0f)
-                       .AppendCallback(() => playerService.SetPaintingAnimationTrigger(false));
+                if (gameService.GetGameState() != GameState.GameOver)
+                {
+                    DOTween.Sequence()
+                           .AppendCallback(() => playerService.SetPaintingAnimationTrigger(true))
+                           .JoinCallback(() => audioService.PlayOneShotAudio(interactAudioSource, doorSound))
+                           .AppendInterval(2.0f)
+                           .AppendCallback(() => playerService.SetPaintingAnimationTrigger(false));
+                }
 
                 doorFacade.SetCanInteract(false);
             }
@@ -63,7 +68,7 @@ namespace GameScene
 
                 if (!switchFacade.CanInteract())
                     continue;
-                
+
                 if ((int)switchFacade.GetSwitchColor() == (int)playerService.GetPlayerColor())
                     continue;
 
@@ -71,7 +76,7 @@ namespace GameScene
 
                 DOTween.Sequence()
                        .AppendCallback(() => playerService.SetPaintingAnimationTrigger(true))
-                       .JoinCallback(()=>audioService.PlayOneShotAudio(interactAudioSource, switchSound))
+                       .JoinCallback(() => audioService.PlayOneShotAudio(interactAudioSource, switchSound))
                        .AppendInterval(2.0f)
                        .AppendCallback(() => playerService.SetPaintingAnimationTrigger(false));
 

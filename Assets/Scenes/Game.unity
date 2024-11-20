@@ -533,6 +533,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 1191831920}
+  cameraFrame: {fileID: 895130018}
+  targetSpriteList:
+  - {fileID: 21300000, guid: 1896f29a42ebcca46a1efacf03eab928, type: 3}
+  - {fileID: 21300000, guid: 8f4203bc4ed900f44997625b592583f5, type: 3}
+  - {fileID: 21300000, guid: 7c0ab886a28a9364d895d46424676e7a, type: 3}
+  - {fileID: 21300000, guid: 3bcef8ccdd70c7a49b3a4b04b3c4fa6d, type: 3}
+  - {fileID: 21300000, guid: edbc49d6d7600b74aa5afc1ce7fad4ca, type: 3}
+  - {fileID: 21300000, guid: 2cb443490c4b52a4f8d2d871b9d80bd7, type: 3}
+  - {fileID: 21300000, guid: 10c41a594ca8d784eb9b983d3a30e242, type: 3}
+  - {fileID: 21300000, guid: 69a9a08df70ef834daca58536d417477, type: 3}
 --- !u!114 &1191831924
 MonoBehaviour:
   m_ObjectHideFlags: 0

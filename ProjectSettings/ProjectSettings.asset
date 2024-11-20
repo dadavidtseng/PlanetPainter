@@ -161,7 +161,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.WintermoonStudio.PlanetPainter_Alpha
+    Android: com.WintermoonStudio.PlanetPainter_Beta
     Standalone: com.SMUGuildhall.Team09
   buildNumber:
     Standalone: 0
