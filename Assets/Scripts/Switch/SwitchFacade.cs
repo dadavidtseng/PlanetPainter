@@ -44,6 +44,7 @@ namespace Switch
         public void        Interact()                       => view.Interact();
         public void        SetCanInteract(bool canInteract) => view.SetCanInteract(canInteract);
         public bool        CanInteract()                    => view.CanInteract();
+        public bool        IsInteracted()                   => view.IsInteracted();
 
         #region Factory & Pool
 

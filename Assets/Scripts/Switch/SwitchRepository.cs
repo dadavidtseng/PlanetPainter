@@ -21,7 +21,7 @@ namespace Switch
             return switchDictionary[switchIndex];
         }
 
-        public int GetDoorCount()
+        public int GetSwitchCount()
         {
             return switchDictionary.Count;
         }

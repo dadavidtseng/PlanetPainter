@@ -81,10 +81,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 4508862286185590354}
   m_HandleRect: {fileID: 0}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -20
+  m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 0.683
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1027,6 +1027,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   percentageText: {fileID: 5347520086743921954}
+  progressBarSlider: {fileID: 7725255650033886739}
 --- !u!114 &483020214634880577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1172,7 +1173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactAudioSource: {fileID: 842424817675402851}
   doorSound: {fileID: 8300000, guid: 30c57cf7dfe75d3459c3e6e4fc3dd575, type: 3}
-  switchSound: {fileID: 8300000, guid: 22230d19bc115bd4b9e4eba02057448c, type: 3}
+  switchSound: {fileID: 8300000, guid: c39f59638e6a3894c95b983d065929aa, type: 3}
 --- !u!1 &5613601428912888556
 GameObject:
   m_ObjectHideFlags: 0

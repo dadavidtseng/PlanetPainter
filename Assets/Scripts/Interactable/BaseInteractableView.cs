@@ -6,8 +6,8 @@ namespace Interactable
     {
         [SerializeField] protected SpriteRenderer spriteRenderer;
 
-        protected bool canInteract;
-        protected bool isInteracted;
+        [SerializeField] protected bool canInteract;
+        [SerializeField] protected bool isInteracted;
 
         public virtual void Interact()
         {

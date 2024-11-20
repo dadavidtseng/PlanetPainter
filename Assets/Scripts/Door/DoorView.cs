@@ -71,9 +71,9 @@ namespace Door
             {
                 gameService.ChangeState(GameState.GameOver);
 
-                UniTask.WaitForSeconds(1.0f);
-                
-                gameService.ChangeState(GameState.Result);
+                DOTween.Sequence()
+                       .AppendInterval(2.0f)
+                       .AppendCallback(() => gameService.ChangeState(GameState.Result));
             }
 
             Debug.Log($"DOOR #{facade.GetDoorIndex()} | Interact");
@@ -100,7 +100,7 @@ namespace Door
                 return;
 
             SetCanInteract(false);
-            // Debug.Log($"DOOR #{facade.GetIndex()} | canInteract: {canInteract}");
+            Debug.Log($"DOOR #{facade.GetDoorIndex()} | canInteract: {canInteract}");
         }
 
         private Transform GetTransform()                      => transform;

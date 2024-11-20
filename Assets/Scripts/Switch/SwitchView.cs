@@ -17,6 +17,9 @@ namespace Switch
 
         public override void Interact()
         {
+            if (!CanInteract())
+                return;
+
             if (playerService.GetPlayerColor() == PlayerColor.Original)
                 return;
 
