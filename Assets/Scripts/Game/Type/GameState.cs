@@ -6,6 +6,6 @@
         Pause,
         Game,
         GameOver,
-        Result
+        Result,
     }
 }

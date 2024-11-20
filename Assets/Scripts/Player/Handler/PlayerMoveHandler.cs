@@ -7,7 +7,7 @@ using Zenject;
 
 namespace Player
 {
-    public class PlayerMoveHandler : IInitializable, ITickable, IDisposable
+    public class PlayerMoveHandler : ITickable
     {
         [Inject] private readonly SignalBus          signalBus;
         [Inject] private readonly PlayerView         view;
@@ -19,23 +19,12 @@ namespace Player
         private float   moveSpeed = 5f;
         private Vector2 movement;
 
-        public void Initialize()
-        {
-            signalBus.Subscribe<OnGameStateChanged>(OnGameStateChanged);
-        }
-
-        private void OnGameStateChanged(OnGameStateChanged e)
-        {
-            if (e.preState == GameState.Tutorial)
-            {
-                var targetPosition = new Vector3(view.GetPosition().x, view.GetPosition().y, -10f);
-
-                cameraService.SetCameraPosition(targetPosition);
-            }
-        }
-
         public void Tick()
         {
+            var targetPosition = new Vector3(view.GetPosition().x, view.GetPosition().y, -10f);
+            
+            cameraService.SetCameraPosition(targetPosition);
+            
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
 
@@ -69,7 +58,7 @@ namespace Player
         {
             if (gameService.GetGameState() != GameState.Game)
                 return;
-            
+
             view.GetTransform().position += direction * moveSpeed * Time.deltaTime;
 
             var targetPosition = new Vector3(view.GetTransform().position.x, view.GetTransform().position.y, -10.0f);
@@ -89,11 +78,6 @@ namespace Player
                        PlayerState.IdleRight => Vector3.left  * 0.5f,
                        _                     => Vector3.zero
                    };
-        }
-
-        public void Dispose()
-        {
-            signalBus.Unsubscribe<OnGameStateChanged>(OnGameStateChanged);
-        }
+        } 
     }
 }

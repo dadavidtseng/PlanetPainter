@@ -1,4 +1,6 @@
 using Audio;
+using Game;
+using Menu;
 using Misc;
 using Title;
 using UnityEngine;
@@ -15,7 +17,8 @@ namespace TitleScene
         [Inject] private readonly ITitleService titleService;
 
         [SerializeField] private AudioMixer audioMixer;
-        [SerializeField] private Slider     volumeSlider;
+        [SerializeField] private Slider     bgmVolumeSlider;
+        [SerializeField] private Slider     sfxVolumeSlider;
 
         private void OnEnable()
         {
@@ -33,9 +36,14 @@ namespace TitleScene
                 SetAppear(true);
         }
 
-        public void SetAudioMixerVolume(string exposedName)
+        public void SetBgmVolume()
         {
-            audioMixer.SetFloat(exposedName, Mathf.Log10(volumeSlider.value) * 20);
+            audioMixer.SetFloat("Bgm", Mathf.Log10(bgmVolumeSlider.value) * 20);
+        }
+        
+        public void SetSfxVolume()
+        {
+            audioMixer.SetFloat("Sfx", Mathf.Log10(bgmVolumeSlider.value) * 20);
         }
 
         public void Button_Close()

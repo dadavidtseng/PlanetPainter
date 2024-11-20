@@ -80,7 +80,7 @@ namespace GameScene
                                            starMasks[1].padding = new Vector4(0, 0, 0, 0);
                                            starMasks[2].padding = new Vector4(0, 0, 0, 0);
                                            starMasks[3].padding =
-                                               new Vector4(0, 0, 0, 200.0f * (1-(paintPercentage - 75) / 100.0f));
+                                               new Vector4(0, 0, 0, 200.0f * (1-(paintPercentage - 75) / 25.0f));
                                            starImages[0].DOFade(1.0f, 0.5f);
                                            starImages[1].DOFade(1.0f, 0.5f);
                                            starImages[2].DOFade(1.0f, 0.5f);

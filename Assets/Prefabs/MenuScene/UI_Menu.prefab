@@ -2580,7 +2580,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2933108057977278403}
-        m_TargetAssemblyTypeName: MenuScene.UI.UI_Menu, Project.MenuScene
+        m_TargetAssemblyTypeName: MenuScene.UI_Menu, Project.MenuScene
         m_MethodName: Button_Back
         m_Mode: 1
         m_Arguments:

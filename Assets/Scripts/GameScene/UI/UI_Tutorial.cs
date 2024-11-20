@@ -26,7 +26,7 @@ namespace GameScene
 
         private int progress;
 
-        private void Awake()
+        private void Start()
         {
             if (gameData.difficulty != 0)
             {

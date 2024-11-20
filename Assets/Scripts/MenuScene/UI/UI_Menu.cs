@@ -43,7 +43,7 @@ namespace MenuScene
 
         private void OnMenuStateChanged(OnMenuStateChanged e)
         {
-            if (e.state == MenuState.StoryBoard)
+            if (e.state is MenuState.StoryBoard)
                 SetAppear(false);
 
             if (e.state == MenuState.Menu)

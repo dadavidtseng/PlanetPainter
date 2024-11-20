@@ -75,7 +75,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.5, y: 2.5}
+  m_Size: {x: 2.5, y: 3}
   m_EdgeRadius: 0
 --- !u!1 &2711505729170382187
 GameObject:
@@ -288,6 +288,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 2850126581897934553}
+  canInteract: 0
+  isInteracted: 0
   blockCollider: {fileID: 9187111446201640058}
   detectCollider: {fileID: 4624572163656807837}
   targetSprites:

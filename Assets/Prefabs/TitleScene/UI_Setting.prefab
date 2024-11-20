@@ -561,7 +561,8 @@ MonoBehaviour:
   canvasGroup: {fileID: 4413964674944771039}
   groupTrans: {fileID: 6515121319454002212}
   audioMixer: {fileID: 24100000, guid: 34cb0eeeaf1b7404d8ac14995a46266e, type: 2}
-  volumeSlider: {fileID: 8492670935506108138}
+  bgmVolumeSlider: {fileID: 8492670935506108138}
+  sfxVolumeSlider: {fileID: 5888598730396261220}
 --- !u!1 &2188600198560025095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,7 +1314,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 5342922162882365781}
   m_HandleRect: {fileID: 284743160614425097}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.01
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
@@ -1322,8 +1323,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7715225577673996977}
         m_TargetAssemblyTypeName: TitleScene.UI_Setting, Project.TitleScene
-        m_MethodName: SetAudioMixerVolume
-        m_Mode: 5
+        m_MethodName: SetBgmVolume
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1424,8 +1425,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7715225577673996977}
         m_TargetAssemblyTypeName: TitleScene.UI_Setting, Project.TitleScene
-        m_MethodName: SetAudioMixerVolume
-        m_Mode: 5
+        m_MethodName: SetSfxVolume
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
