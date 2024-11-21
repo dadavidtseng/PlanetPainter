@@ -17,6 +17,7 @@ namespace TitleScene
         [Inject] private readonly ITitleService titleService;
 
         [SerializeField] private AudioMixer audioMixer;
+        [SerializeField] private AudioSource audioSource;
         [SerializeField] private Slider     bgmVolumeSlider;
         [SerializeField] private Slider     sfxVolumeSlider;
 
@@ -39,6 +40,11 @@ namespace TitleScene
         public void SetBgmVolume()
         {
             audioMixer.SetFloat("Bgm", Mathf.Log10(bgmVolumeSlider.value) * 20);
+        }
+
+        public void SetAudioSourceVolume()
+        {
+            audioService.SetAudioSourceVolume(bgmVolumeSlider.value);
         }
         
         public void SetSfxVolume()

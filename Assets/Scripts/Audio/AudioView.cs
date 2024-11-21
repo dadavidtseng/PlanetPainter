@@ -23,9 +23,10 @@ namespace Audio
 
         public void PlayButtonClickAudio() => buttonClickAudioSource.PlayOneShot(buttonClickAudioClip);
         public void PlayOneShotAudio(AudioSource source, AudioClip clip) => source.PlayOneShot(clip);
-        public void PauseAudio(AudioSource       source)                 => source.Pause();
-        public void ResumeAudio(AudioSource      source)                 => source.Play();
+        public void PauseAudio(AudioSource       source) => source.Pause();
+        public void ResumeAudio(AudioSource      source) => source.Play();
         public void StartAudio(AudioSource       source) => source.Play();
         public void StopAudio(AudioSource        source) => source.Pause();
+        public void SetAudioSourceVolume(float   volume) => bgm.volume = volume;
     }
 }

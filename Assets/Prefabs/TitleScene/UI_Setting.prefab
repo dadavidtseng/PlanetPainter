@@ -561,6 +561,7 @@ MonoBehaviour:
   canvasGroup: {fileID: 4413964674944771039}
   groupTrans: {fileID: 6515121319454002212}
   audioMixer: {fileID: 24100000, guid: 34cb0eeeaf1b7404d8ac14995a46266e, type: 2}
+  audioSource: {fileID: 0}
   bgmVolumeSlider: {fileID: 8492670935506108138}
   sfxVolumeSlider: {fileID: 5888598730396261220}
 --- !u!1 &2188600198560025095
@@ -1323,7 +1324,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7715225577673996977}
         m_TargetAssemblyTypeName: TitleScene.UI_Setting, Project.TitleScene
-        m_MethodName: SetBgmVolume
+        m_MethodName: SetAudioSourceVolume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
