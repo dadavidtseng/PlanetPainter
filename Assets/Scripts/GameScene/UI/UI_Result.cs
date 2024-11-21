@@ -30,7 +30,7 @@ namespace GameScene
         [SerializeField] private AudioClip       resultMushroomSound;
         [SerializeField] private AudioSource     resultAudioSource;
         [SerializeField] private AudioSource     resultMushroomAudioSource;
-        [SerializeField] private Button          nextLevelBtn;
+        [SerializeField] private TextMeshProUGUI          nextLevelBtnText;
 
         private void OnEnable()
         {
@@ -47,7 +47,7 @@ namespace GameScene
             if (e.state == GameState.Result)
             {
                 if (gameData.difficulty == 7)
-                    nextLevelBtn.interactable = false;
+                    nextLevelBtnText.text = "Main Menu";
 
                 DOTween.Sequence()
                        .AppendInterval(5.0f)
@@ -142,7 +142,7 @@ namespace GameScene
             }
         }
 
-        public void Button_BackToMenu()
+        public void Button_LevelSelect()
         {
             audioService.PlayButtonClickAudio();
             gameData.SetDifficulty(gameData.difficulty + 1);
@@ -160,6 +160,12 @@ namespace GameScene
         {
             audioService.PlayButtonClickAudio();
 
+            if (gameData.difficulty == 7)
+            {
+                sceneService.LoadScene(1);
+                return;
+            }    
+            
             Debug.Log($"<color=#ff0000><b>GAME DATA | difficulty: {gameData.difficulty}</b></color>");
 
             gameData.SetDifficulty(gameData.difficulty + 1);

@@ -1,4 +1,3 @@
-using Cysharp.Threading.Tasks;
 using Data;
 using DG.Tweening;
 using Game;
@@ -72,7 +71,7 @@ namespace Door
                 gameService.ChangeState(GameState.GameOver);
 
                 DOTween.Sequence()
-                       .AppendInterval(2.0f)
+                       .AppendInterval(0.5f)
                        .AppendCallback(() => gameService.ChangeState(GameState.Result));
             }
 

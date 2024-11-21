@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Game;
+using UnityEngine;
 
 namespace Interactable
 {
@@ -9,6 +10,8 @@ namespace Interactable
         [SerializeField] protected bool canInteract;
         [SerializeField] protected bool isInteracted;
 
+        private DpadState currentDpadState;
+        
         public virtual void Interact()
         {
         }

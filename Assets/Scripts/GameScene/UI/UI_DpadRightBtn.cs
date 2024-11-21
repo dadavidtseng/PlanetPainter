@@ -1,3 +1,4 @@
+using Game;
 using Player;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -17,7 +18,6 @@ namespace GameScene
 
         protected override void Move()
         {
-
             playerService.Move(Vector3.right);
         }
 

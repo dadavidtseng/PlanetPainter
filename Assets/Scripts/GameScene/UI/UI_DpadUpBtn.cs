@@ -1,3 +1,4 @@
+using Game;
 using Player;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -17,17 +18,16 @@ namespace GameScene
 
         protected override void Move()
         {
-            
             playerService.Move(Vector3.up);
         }
-        
+
         public override void OnPointerDown(PointerEventData eventData)
         {
             base.OnPointerDown(eventData);
             playerService.ChangePlayerState(PlayerState.IdleUp);
             playerService.ChangePlayerState(PlayerState.IsMoving);
         }
-        
+
         public override void OnPointerUp(PointerEventData eventData)
         {
             base.OnPointerUp(eventData);

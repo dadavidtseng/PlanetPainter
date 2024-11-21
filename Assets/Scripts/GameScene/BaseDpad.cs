@@ -1,6 +1,8 @@
 ﻿using System;
 using Audio;
+using Game;
 using Player;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -13,7 +15,12 @@ namespace GameScene
         [Inject] private readonly IAudioService  audioService;
         [Inject] private readonly IPlayerService playerService;
 
+        [SerializeField] private TextMeshProUGUI text;
+        
+
         protected bool canMove;
+
+       
 
         protected virtual void Move()
         {

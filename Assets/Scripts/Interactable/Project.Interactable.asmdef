@@ -1,7 +1,7 @@
 {
     "name": "Project.Interactable",
     "rootNamespace": "",
-    "references": [],
+    "references": ["GUID:1cd9418e5cc328847b5f7df3a39c8030"],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

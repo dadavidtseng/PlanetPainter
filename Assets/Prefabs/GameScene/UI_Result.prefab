@@ -956,7 +956,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7777556405464904812}
         m_TargetAssemblyTypeName: GameScene.UI_Result, Project.GameScene
-        m_MethodName: Button_BackToMenu
+        m_MethodName: Button_LevelSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
