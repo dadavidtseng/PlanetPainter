@@ -1,5 +1,6 @@
 ﻿using Audio;
 using Data;
+using DG.Tweening;
 using Menu;
 using Misc;
 using SceneTransition;
@@ -17,8 +18,9 @@ namespace MenuScene
         [Inject] private readonly IMenuService  menuService;
         [Inject] private readonly ISceneService sceneService;
 
-        [SerializeField] private AudioClip menuBgm;
-        [SerializeField] private Button[]  buttons;
+        [SerializeField] private AudioClip     menuBgm;
+        [SerializeField] private Button[]      buttons;
+        [SerializeField] private RectTransform handImage;
 
         private void Awake()
         {
@@ -29,6 +31,13 @@ namespace MenuScene
                 if (i > gameData.difficulty)
                     buttons[i].interactable = false;
             }
+        }
+
+        private void Start()
+        {
+            handImage.DOAnchorPosX(handImage.anchoredPosition.x + 20f, 1f)
+                     .SetLoops(-1, LoopType.Yoyo)
+                     .SetEase(Ease.InOutSine);
         }
 
         private void OnEnable()
