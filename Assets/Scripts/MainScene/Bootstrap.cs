@@ -1,4 +1,3 @@
-using Data;
 using SceneTransition;
 using UnityEngine;
 using Zenject;
@@ -11,7 +10,7 @@ namespace MainScene
 
         private void Start()
         {
-            sceneService.LoadScene(0);
+            sceneService.LoadScene(1);
         }
     }
 }

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: Tile_BlockerBox_194
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 349800352, guid: 9c71039d314021748b173bde3fa98e5d, type: 3}
+  m_Sprite: {fileID: 46127375, guid: bbf8fd99dd3aaa947a70e963928e2813, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

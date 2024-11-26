@@ -26,11 +26,11 @@ namespace MenuScene
         {
             audioService.PlayBackgroundMusic(menuBgm);
 
-            for (int i = 0; i < buttons.Length; i++)
-            {
-                if (i > gameData.difficulty)
-                    buttons[i].interactable = false;
-            }
+            // for (int i = 0; i < buttons.Length; i++)
+            // {
+            //     if (i > gameData.difficulty)
+            //         buttons[i].interactable = false;
+            // }
         }
 
         private void Start()
