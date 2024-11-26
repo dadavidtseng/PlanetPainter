@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a30de9c8b6aeb8b4aaedde4411a90d6f
+guid: fbd766da863c38a4fab079983ff8ebb1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -121,7 +121,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Bluelevel2Door_01
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e80b1559860c14f93df9d695105fba
+      internalID: -314599963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +153,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bluelevel2Door_01: -314599963
+      Bluelevel2Door_1: 1971162234
+      Bluelevel2Door_10: 1125221588
+      Bluelevel2Door_12: -1367036299
+      Bluelevel2Door_13: -354127070
+      Bluelevel2Door_2: -99064114
+      Bluelevel2Door_3: -834529376
+      Bluelevel2Door_4: 1977534867
+      Bluelevel2Door_5: -1740236955
+      Bluelevel2Door_6: 671360992
+      Bluelevel2Door_7: 1982968896
+      Bluelevel2Door_8: -1252165645
+      Bluelevel2Door_9: 270695099
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

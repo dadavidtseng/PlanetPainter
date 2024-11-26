@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ee24a66382346724da0069d9f8ba793f
+guid: b9d974af8fa7fea4db7243590da3f4ba
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,7 +121,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Graylevel2Door_01
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae05417f59f6cf540962b177089c8a7b
+      internalID: -483293857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +153,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Graylevel2Door_01: -483293857
+      Graylevel2Door_1: 1610645886
+      Graylevel2Door_11: 757835953
+      Graylevel2Door_12: -726130644
+      Graylevel2Door_2: 498602817
+      Graylevel2Door_3: -1737515301
+      Graylevel2Door_4: 936350864
+      Graylevel2Door_5: -521530825
+      Graylevel2Door_6: 412701436
+      Graylevel2Door_7: -1861823104
+      Graylevel2Door_8: 230073588
+      Graylevel2Door_9: -1519222966
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
