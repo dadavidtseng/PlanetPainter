@@ -1,10 +1,7 @@
 using Audio;
-using Game;
-using Menu;
 using Misc;
 using Title;
 using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.UI;
 using Zenject;
 
@@ -15,8 +12,7 @@ namespace TitleScene
         [Inject] private readonly SignalBus     signalBus;
         [Inject] private readonly IAudioService audioService;
         [Inject] private readonly ITitleService titleService;
-
-        [SerializeField] private AudioMixer  audioMixer;
+        
         [SerializeField] private AudioSource audioSource;
         [SerializeField] private Slider      bgmVolumeSlider;
         [SerializeField] private Slider      sfxVolumeSlider;
