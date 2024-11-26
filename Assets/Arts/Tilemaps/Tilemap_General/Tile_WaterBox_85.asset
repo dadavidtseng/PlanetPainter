@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: Tile_WaterBox_85
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -1849574857, guid: 7231e27697de0fe44a3d5f3fa2b7e053, type: 3}
+  m_Sprite: {fileID: -1729076968, guid: 9ff89fe6bcd47014ea511a200424dd46, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
