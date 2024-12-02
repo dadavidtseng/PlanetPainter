@@ -30,7 +30,7 @@ namespace GameScene
             Container.BindInterfacesAndSelfTo<CameraService>().AsSingle();
             Container.Bind<CameraView>().FromComponentInHierarchy().AsSingle();
         }
-        
+
         private void BindSignal()
         {
             Container.DeclareSignal<OnPlayerStateChanged>();
@@ -53,8 +53,9 @@ namespace GameScene
             Container.Bind<DoorRepository>().AsSingle();
             Container.BindInterfacesAndSelfTo<DoorSpawner>().AsSingle();
 
-            Container.BindFactory<int, int, DoorColor, Vector2, DoorFacade, DoorFacade.DoorFactory>()
-                     .FromPoolableMemoryPool<int, int, DoorColor, Vector2, DoorFacade, DoorFacade.DoorFacadePool>
+            Container.BindFactory<int, int, DoorType, DoorColor, Vector2, DoorFacade, DoorFacade.DoorFactory>()
+                     .FromPoolableMemoryPool<int, int, DoorType, DoorColor, Vector2, DoorFacade,
+                              DoorFacade.DoorFacadePool>
                           (poolBinder => poolBinder
                                         .WithInitialSize(1)
                                         .FromSubContainerResolve()

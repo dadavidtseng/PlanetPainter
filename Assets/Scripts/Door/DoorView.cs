@@ -19,13 +19,15 @@ namespace Door
         [Inject] private readonly IPlayerService   playerService;
         [Inject] private readonly IGameService     gameService;
 
+        [SerializeField] private SpriteRenderer targetSpriteRenderer;
         [SerializeField] private SpriteRenderer lockSpriteRenderer;
         [SerializeField] private BoxCollider2D  blockCollider;
         [SerializeField] private BoxCollider2D  detectCollider;
-        [SerializeField] private Sprite[]       targetSprites;
+        [SerializeField] private Sprite[]       targetFrontSprites;
+        [SerializeField] private Sprite[]       targetSideSprites;
 
         private bool isLocked = true;
-        
+
         private void OnEnable()
         {
             signalBus.Subscribe<OnSwitchColorChanged>(OnSwitchColorChanged);
@@ -61,6 +63,7 @@ namespace Door
         {
             if (!CanInteract())
                 return;
+
 
             SetSprite(GetTargetSprites()[3]);
             blockCollider.enabled = false;
@@ -102,10 +105,28 @@ namespace Door
             Debug.Log($"DOOR #{facade.GetDoorIndex()} | canInteract: {canInteract}");
         }
 
-        private Transform GetTransform()                      => transform;
-        public  Vector3   GetPosition()                       => transform.position;
-        public  void      SetPosition(Vector2 targetPosition) => GetTransform().position = targetPosition;
-        public  void      SetSprite(Sprite    targetSprite)   => spriteRenderer.sprite = targetSprite;
-        public  Sprite[]  GetTargetSprites()                  => targetSprites;
+        private Transform      GetTransform()                      => transform;
+        public  Vector3        GetPosition()                       => transform.position;
+        public  SpriteRenderer GetTargetSpriteRenderer()           => targetSpriteRenderer;
+        public  SpriteRenderer GetLockSpriteRenderer()             => lockSpriteRenderer;
+        public  void           SetPosition(Vector2 targetPosition) => GetTransform().position = targetPosition;
+        public  void           SetSprite(Sprite    targetSprite)   => spriteRenderer.sprite = targetSprite;
+
+        public Sprite[] GetTargetSprites()
+        {
+            if (facade.GetDoorType() == DoorType.Front)
+                return targetFrontSprites;
+
+            if (facade.GetDoorType() == DoorType.Back)
+                return targetFrontSprites;
+
+            if (facade.GetDoorType() == DoorType.Left)
+                return targetSideSprites;
+
+            if (facade.GetDoorType() == DoorType.Right)
+                return targetSideSprites;
+
+            return new Sprite[] { };
+        }
     }
 }

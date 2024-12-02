@@ -1,4 +1,3 @@
-using System;
 using Audio;
 using Data;
 using DG.Tweening;
@@ -8,7 +7,6 @@ using Misc;
 using SceneTransition;
 using TMPro;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
 using Zenject;
 
@@ -46,8 +44,8 @@ namespace GameScene
         {
             if (e.state == GameState.Result)
             {
-                if (gameData.difficulty == 7)
-                    nextLevelBtnText.text = "Main Menu";
+                if (gameData.difficulty == 7) 
+                    nextLevelBtnText.text = "Credit";
 
                 DOTween.Sequence()
                        .AppendInterval(5.0f)

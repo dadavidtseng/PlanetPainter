@@ -1,4 +1,5 @@
 using Audio;
+using Data;
 using DG.Tweening;
 using SceneTransition;
 using Title;
@@ -12,6 +13,7 @@ namespace TitleScene
         [Inject] private readonly ISceneService sceneService;
         [Inject] private readonly IAudioService audioService;
         [Inject] private readonly ITitleService titleService;
+        [Inject] private readonly GameData      gameData;
 
         [SerializeField] private RectTransform startBtnRectTrans;
         [SerializeField] private RectTransform quitBtnRectTrans;
@@ -27,6 +29,12 @@ namespace TitleScene
 
         private void Start()
         {
+            if (gameData.difficulty == 7)
+            {
+                titleService.ChangeTitleState(TitleState.Credit);
+                gameData.SetDifficulty(8);
+            }
+
             startBtnRectTrans.DOAnchorPosY(startBtnRectTrans.anchoredPosition.y + 10f, 1f)
                              .SetLoops(-1, LoopType.Yoyo)
                              .SetEase(Ease.InOutSine);

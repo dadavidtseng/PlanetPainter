@@ -212,14 +212,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 8265623129790455337}
+  canInteract: 0
+  isInteracted: 0
+  targetSpriteRenderer: {fileID: 8265623129790455337}
   lockSpriteRenderer: {fileID: 322476248465269312}
   blockCollider: {fileID: 7709094768088339703}
   detectCollider: {fileID: 1318282801252779493}
-  targetSprites:
+  targetFrontSprites:
   - {fileID: 21300000, guid: 9aa7f119e485cf749b7edff901840d00, type: 3}
   - {fileID: 21300000, guid: 2c53b54944367a0439dba31e249c7657, type: 3}
   - {fileID: 21300000, guid: a2a0a213476823243b206ccc7aa21f5c, type: 3}
   - {fileID: 21300000, guid: 1782814d8fce9ce4e81e860f6310077f, type: 3}
+  targetSideSprites:
+  - {fileID: 21300000, guid: 46f7408965265b344991c7d17e3659d7, type: 3}
+  - {fileID: 21300000, guid: 4ca2c6a07b75d8b48ab46a1222009c78, type: 3}
+  - {fileID: 21300000, guid: f902a329e7ef9f843898fdebbb10719a, type: 3}
+  - {fileID: 21300000, guid: 81426051195594a468f9dc30b9e392b1, type: 3}
 --- !u!114 &7607485328979023940
 MonoBehaviour:
   m_ObjectHideFlags: 0

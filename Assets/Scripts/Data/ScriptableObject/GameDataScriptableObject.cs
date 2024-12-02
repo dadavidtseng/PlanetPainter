@@ -33,9 +33,10 @@ namespace Data
     [Serializable]
     public struct DoorInfo
     {
-        public int     doorCount;
+        public int       doorCount;
         public int[]     doorIndex;
         public int[]     registeredSwitchIndex;
+        public int[]     doorTypeIndex;
         public int[]     doorColorIndex;
         public Vector2[] spawnPosition;
     }
@@ -49,11 +50,9 @@ namespace Data
     [Serializable]
     public struct SwitchInfo
     {
-[Header("Switch Count")]
-        public int     switchCount;
-        [Header("Switch Index")]
-        public int[]     switchIndex;
-        public int[]     switchColorIndex;
-        public Vector2[] spawnPosition;
+        [Header("Switch Count")] public int       switchCount;
+        [Header("Switch Index")] public int[]     switchIndex;
+        public                          int[]     switchColorIndex;
+        public                          Vector2[] spawnPosition;
     }
 }

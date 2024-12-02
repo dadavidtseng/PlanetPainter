@@ -101,7 +101,11 @@ namespace Player
                     blockerBoxSequence.Kill();
 
                     blockerBoxSequence = DOTween.Sequence()
-                                                .AppendCallback(() => view.GetMushroomParticleSystem().Play())
+                                                .AppendCallback(() =>
+                                                                {
+                                                                    if (colorHandler.GetColor() != PlayerColor.Original)
+                                                                        view.GetMushroomParticleSystem().Play();
+                                                                })
                                                 .OnComplete(() =>
                                                                 audioService
                                                                    .PlayOneShotAudio(view.GetCollisionAudioSource(),
@@ -120,7 +124,11 @@ namespace Player
                     blockerBoxSequence.Kill();
 
                     blockerBoxSequence = DOTween.Sequence()
-                                                .AppendCallback(() => view.GetMushroomParticleSystem().Play())
+                                                .AppendCallback(() =>
+                                                                {
+                                                                    if (colorHandler.GetColor() != PlayerColor.Original)
+                                                                        view.GetMushroomParticleSystem().Play();
+                                                                })
                                                 .OnComplete(() =>
                                                                 audioService
                                                                    .PlayOneShotAudio(view.GetCollisionAudioSource(),
@@ -139,7 +147,11 @@ namespace Player
                     blockerBoxSequence.Kill();
 
                     blockerBoxSequence = DOTween.Sequence()
-                                                .AppendCallback(() => view.GetMushroomParticleSystem().Play())
+                                                .AppendCallback(() =>
+                                                                {
+                                                                    if (colorHandler.GetColor() != PlayerColor.Original)
+                                                                        view.GetMushroomParticleSystem().Play();
+                                                                })
                                                 .OnComplete(() =>
                                                                 audioService
                                                                    .PlayOneShotAudio(view.GetCollisionAudioSource(),

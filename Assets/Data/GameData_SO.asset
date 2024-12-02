@@ -37,66 +37,74 @@ MonoBehaviour:
     - doorCount: 1
       doorIndex: 00000000
       registeredSwitchIndex: 00000000
+      doorTypeIndex: 01000000
       doorColorIndex: 00000000
       spawnPosition:
       - {x: -7, y: 6}
     - doorCount: 2
       doorIndex: 0000000001000000
       registeredSwitchIndex: 0000000000000000
+      doorTypeIndex: 0300000002000000
       doorColorIndex: 0000000001000000
       spawnPosition:
-      - {x: -4, y: 0}
-      - {x: 12, y: 0}
+      - {x: -4.3, y: 0}
+      - {x: 11.3, y: 0}
     - doorCount: 2
       doorIndex: 0000000001000000
       registeredSwitchIndex: 0000000000000000
+      doorTypeIndex: 0300000000000000
       doorColorIndex: 0000000001000000
       spawnPosition:
-      - {x: -7, y: -1}
+      - {x: -6.4, y: -1}
       - {x: 0, y: 6}
     - doorCount: 3
       doorIndex: 000000000100000002000000
       registeredSwitchIndex: 000000000000000000000000
+      doorTypeIndex: 030000000000000002000000
       doorColorIndex: 010000000000000002000000
       spawnPosition:
-      - {x: -8.5, y: 2}
-      - {x: -3, y: -2.5}
-      - {x: 12, y: 3}
+      - {x: -8.3, y: 2}
+      - {x: -3, y: -2}
+      - {x: 11.3, y: 3}
     - doorCount: 3
       doorIndex: 000000000100000002000000
       registeredSwitchIndex: 000000000000000000000000
+      doorTypeIndex: 000000000000000003000000
       doorColorIndex: 010000000000000002000000
       spawnPosition:
       - {x: 17, y: 9}
       - {x: 17, y: 16}
-      - {x: 3.05, y: 2.98}
+      - {x: 2.7, y: 3}
     - doorCount: 3
       doorIndex: 000000000100000002000000
       registeredSwitchIndex: 000000000000000000000000
+      doorTypeIndex: 030000000000000002000000
       doorColorIndex: 020000000000000001000000
       spawnPosition:
-      - {x: -12, y: 1}
+      - {x: -11.4, y: 1}
       - {x: 0, y: 2}
-      - {x: 18, y: -1}
+      - {x: 17.3, y: -1}
     - doorCount: 4
       doorIndex: 00000000010000000200000003000000
       registeredSwitchIndex: 00000000000000000100000000000000
+      doorTypeIndex: 03000000000000000000000002000000
       doorColorIndex: 00000000010000000200000000000000
       spawnPosition:
-      - {x: -5, y: -1}
+      - {x: -4.35, y: -1}
       - {x: 8.5, y: 16}
       - {x: 18, y: 8}
-      - {x: 15, y: 14}
+      - {x: 15.5, y: 14}
     - doorCount: 5
       doorIndex: 0000000001000000020000000300000004000000
       registeredSwitchIndex: 0000000001000000000000000100000000000000
+      doorTypeIndex: 0000000000000000030000000000000003000000
       doorColorIndex: 0200000002000000010000000100000000000000
       spawnPosition:
       - {x: -6, y: 7}
       - {x: 6, y: 12}
-      - {x: -0.5, y: -3}
+      - {x: -0.3, y: -3}
       - {x: 6, y: 16}
-      - {x: -5.5, y: -3}
+      - {x: -5.3, y: -3}
   switchSettings:
     switchInfos:
     - switchCount: 1

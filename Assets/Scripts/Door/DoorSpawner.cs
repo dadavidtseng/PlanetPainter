@@ -21,6 +21,7 @@ namespace Door
             {
                 factory.Create(gameData.GetDoorIndex(i),
                                gameData.GetDoorRegisteredSwitchIndex(i),
+                               (DoorType)gameData.GetDoorTypeIndex(i),
                                (DoorColor)gameData.GetDoorColorIndex(i),
                                gameData.GetDoorSpawnPosition(i));
             }
