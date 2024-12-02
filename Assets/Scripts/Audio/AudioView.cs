@@ -27,6 +27,7 @@ namespace Audio
         public void ResumeAudio(AudioSource      source) => source.Play();
         public void StartAudio(AudioSource       source) => source.Play();
         public void StopAudio(AudioSource        source) => source.Pause();
-        public void SetAudioSourceVolume(float   volume) => bgm.volume = volume;
+        public void SetBgmVolume(float           volume) => bgm.volume = volume;
+        public void SetSfxVolume(AudioSource source,float           volume) => source.volume = volume;
     }
 }

@@ -12,6 +12,7 @@ namespace Audio
         void ResumeAudio(AudioSource      source);
         void StartAudio(AudioSource       source);
         void StopAudio(AudioSource        source);
-        void SetAudioSourceVolume(float   volume);
+        void SetBgmVolume(float           volume);
+        void SetSfxVolume(AudioSource     source,float   volume);
     }
 }

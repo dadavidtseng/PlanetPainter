@@ -12,7 +12,7 @@ namespace TitleScene
         [Inject] private readonly SignalBus     signalBus;
         [Inject] private readonly IAudioService audioService;
         [Inject] private readonly ITitleService titleService;
-        
+
         [SerializeField] private AudioSource audioSource;
         [SerializeField] private Slider      bgmVolumeSlider;
         [SerializeField] private Slider      sfxVolumeSlider;
@@ -35,12 +35,12 @@ namespace TitleScene
 
         public void SetBgmVolume()
         {
-            audioService.SetAudioSourceVolume(bgmVolumeSlider.value);
+            audioService.SetBgmVolume(bgmVolumeSlider.value);
         }
 
         public void SetSfxVolume()
         {
-            audioService.SetAudioSourceVolume(sfxVolumeSlider.value);
+            audioService.SetSfxVolume(audioSource, sfxVolumeSlider.value);
         }
 
         public void Button_Close()

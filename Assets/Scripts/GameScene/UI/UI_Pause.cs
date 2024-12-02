@@ -20,6 +20,7 @@ namespace GameScene
         [Inject] private readonly IGameService  gameService;
         [Inject] private readonly GameData      gameData;
 
+        [SerializeField] private AudioSource     audioSource;
         [SerializeField] private TextMeshProUGUI titleText;
         [SerializeField] private Slider          bgmVolumeSlider;
         [SerializeField] private Slider          sfxVolumeSlider;
@@ -50,12 +51,12 @@ namespace GameScene
 
         public void SetBgmVolume()
         {
-            audioService.SetAudioSourceVolume(bgmVolumeSlider.value);
+            audioService.SetBgmVolume(bgmVolumeSlider.value);
         }
 
         public void SetSfxVolume()
         {
-            audioService.SetAudioSourceVolume(sfxVolumeSlider.value);
+            audioService.SetSfxVolume(audioSource,sfxVolumeSlider.value);
         }
 
         public void Button_Restart()
