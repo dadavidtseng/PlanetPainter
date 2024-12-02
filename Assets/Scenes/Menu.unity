@@ -684,33 +684,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 323376085}
     m_Modifications:
-    - target: {fileID: 315112960964998637, guid: 248f3398549a9a8498a1153b7e38a6ae, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 960
-      objectReference: {fileID: 0}
-    - target: {fileID: 315112960964998637, guid: 248f3398549a9a8498a1153b7e38a6ae, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 2016.7499
-      objectReference: {fileID: 0}
     - target: {fileID: 1280492191170230488, guid: 248f3398549a9a8498a1153b7e38a6ae, type: 3}
       propertyPath: m_Name
       value: UI_StoryBoard
-      objectReference: {fileID: 0}
-    - target: {fileID: 3057246532731072665, guid: 248f3398549a9a8498a1153b7e38a6ae, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 3120
-      objectReference: {fileID: 0}
-    - target: {fileID: 3057246532731072665, guid: 248f3398549a9a8498a1153b7e38a6ae, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 3600
-      objectReference: {fileID: 0}
-    - target: {fileID: 6095987381245366345, guid: 248f3398549a9a8498a1153b7e38a6ae, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 960
-      objectReference: {fileID: 0}
-    - target: {fileID: 6095987381245366345, guid: 248f3398549a9a8498a1153b7e38a6ae, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 2016.7499
       objectReference: {fileID: 0}
     - target: {fileID: 6252699453488693213, guid: 248f3398549a9a8498a1153b7e38a6ae, type: 3}
       propertyPath: m_Pivot.x
@@ -791,14 +767,6 @@ PrefabInstance:
     - target: {fileID: 6252699453488693213, guid: 248f3398549a9a8498a1153b7e38a6ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6307537302369198650, guid: 248f3398549a9a8498a1153b7e38a6ae, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 960
-      objectReference: {fileID: 0}
-    - target: {fileID: 6307537302369198650, guid: 248f3398549a9a8498a1153b7e38a6ae, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 3600
       objectReference: {fileID: 0}
     - target: {fileID: 9071948847822112543, guid: 248f3398549a9a8498a1153b7e38a6ae, type: 3}
       propertyPath: canvas

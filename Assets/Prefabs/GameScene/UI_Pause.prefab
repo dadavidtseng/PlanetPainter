@@ -1846,7 +1846,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 1046041063810120026}
   m_HandleRect: {fileID: 634411014293178545}
   m_Direction: 0
-  m_MinValue: 0.01
+  m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
@@ -2005,8 +2005,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 9097740544225119127}
   groupTrans: {fileID: 7286814346793439827}
+  audioSource: {fileID: 0}
   titleText: {fileID: 6427141845672204662}
-  audioMixer: {fileID: 24100000, guid: 34cb0eeeaf1b7404d8ac14995a46266e, type: 2}
   bgmVolumeSlider: {fileID: 286310429780844764}
   sfxVolumeSlider: {fileID: 4161806606724565184}
 --- !u!1 &7186571685717923043
@@ -2303,7 +2303,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 6847395585464224509}
   m_HandleRect: {fileID: 6404806794661736251}
   m_Direction: 0
-  m_MinValue: 0.01
+  m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1

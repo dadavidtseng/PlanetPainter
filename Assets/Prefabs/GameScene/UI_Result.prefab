@@ -2247,7 +2247,7 @@ MonoBehaviour:
   resultMushroomSound: {fileID: 8300000, guid: 60220e4ab69dfc447be2126b2c30ebae, type: 3}
   resultAudioSource: {fileID: 2157408394632376492}
   resultMushroomAudioSource: {fileID: 4822344307776161290}
-  nextLevelBtn: {fileID: 2116988985566266391}
+  nextLevelBtnText: {fileID: 1583463267038505017}
 --- !u!1 &8251723068079442131
 GameObject:
   m_ObjectHideFlags: 0
