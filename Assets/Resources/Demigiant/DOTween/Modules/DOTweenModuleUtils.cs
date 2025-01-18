@@ -3,10 +3,10 @@
 
 using System;
 using System.Reflection;
-using UnityEngine;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Core.PathCore;
 using DG.Tweening.Plugins.Options;
+using UnityEngine;
 
 #pragma warning disable 1591
 namespace DG.Tweening

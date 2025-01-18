@@ -1,8 +1,7 @@
-﻿using System;
+﻿using Player;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Map.Types;
-using Player;
 using UnityEngine;
 using Zenject;
 using Random = UnityEngine.Random;

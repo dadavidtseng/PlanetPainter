@@ -1,4 +1,4 @@
-﻿namespace Map.Types
+﻿namespace Map
 {
     public enum TileColor
     {

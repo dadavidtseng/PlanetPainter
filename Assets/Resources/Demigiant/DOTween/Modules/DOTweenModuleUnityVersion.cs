@@ -2,9 +2,9 @@
 // Created: 2018/07/13
 
 using System;
-using UnityEngine;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
+using UnityEngine;
 //#if UNITY_2018_1_OR_NEWER && (NET_4_6 || NET_STANDARD_2_0)
 //using Task = System.Threading.Tasks.Task;
 //#endif
