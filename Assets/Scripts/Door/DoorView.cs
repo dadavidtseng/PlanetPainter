@@ -1,3 +1,9 @@
+//----------------------------------------------------------------------------------------------------
+// DoorView.cs
+//----------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------------------
+
 using Data;
 using DG.Tweening;
 using Game;
@@ -7,6 +13,7 @@ using Switch;
 using UnityEngine;
 using Zenject;
 
+//----------------------------------------------------------------------------------------------------
 namespace Door
 {
     public class DoorView : BaseInteractableView
@@ -28,16 +35,19 @@ namespace Door
 
         private bool isLocked = true;
 
+        //----------------------------------------------------------------------------------------------------
         private void OnEnable()
         {
             signalBus.Subscribe<OnSwitchColorChanged>(OnSwitchColorChanged);
         }
 
+        //----------------------------------------------------------------------------------------------------
         private void OnDisable()
         {
             signalBus.Unsubscribe<OnSwitchColorChanged>(OnSwitchColorChanged);
         }
 
+        //----------------------------------------------------------------------------------------------------
         private void OnSwitchColorChanged(OnSwitchColorChanged e)
         {
             if (IsInteracted())
@@ -59,11 +69,11 @@ namespace Door
             }
         }
 
+        //----------------------------------------------------------------------------------------------------
         public override void Interact()
         {
             if (!CanInteract())
                 return;
-
 
             SetSprite(GetTargetSprites()[3]);
             blockCollider.enabled = false;
@@ -74,13 +84,14 @@ namespace Door
                 gameService.ChangeState(GameState.GameOver);
 
                 DOTween.Sequence()
-                       .AppendInterval(0.5f)
-                       .AppendCallback(() => gameService.ChangeState(GameState.Result));
+                    .AppendInterval(0.5f)
+                    .AppendCallback(() => gameService.ChangeState(GameState.Result));
             }
 
             Debug.Log($"DOOR #{facade.GetDoorIndex()} | Interact");
         }
 
+        //----------------------------------------------------------------------------------------------------
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (!other.CompareTag("Player"))
@@ -89,13 +100,13 @@ namespace Door
             if (isLocked)
                 return;
 
-
             if ((int)facade.GetDoorColor() == (int)playerService.GetPlayerColor())
                 SetCanInteract(true);
 
             Debug.Log($"DOOR #{facade.GetDoorIndex()} | canInteract: {canInteract}");
         }
 
+        //----------------------------------------------------------------------------------------------------
         private void OnTriggerExit2D(Collider2D other)
         {
             if (!other.CompareTag("Player"))
@@ -105,13 +116,15 @@ namespace Door
             Debug.Log($"DOOR #{facade.GetDoorIndex()} | canInteract: {canInteract}");
         }
 
+        //----------------------------------------------------------------------------------------------------
         private Transform      GetTransform()                      => transform;
         public  Vector3        GetPosition()                       => transform.position;
         public  SpriteRenderer GetTargetSpriteRenderer()           => targetSpriteRenderer;
         public  SpriteRenderer GetLockSpriteRenderer()             => lockSpriteRenderer;
         public  void           SetPosition(Vector2 targetPosition) => GetTransform().position = targetPosition;
-        public  void           SetSprite(Sprite    targetSprite)   => spriteRenderer.sprite = targetSprite;
+        public  void           SetSprite(Sprite targetSprite)      => spriteRenderer.sprite = targetSprite;
 
+        //----------------------------------------------------------------------------------------------------
         public Sprite[] GetTargetSprites()
         {
             if (facade.GetDoorType() == DoorType.Front)

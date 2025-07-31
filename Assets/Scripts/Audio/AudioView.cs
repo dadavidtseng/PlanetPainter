@@ -1,6 +1,12 @@
-﻿using DG.Tweening;
+﻿//----------------------------------------------------------------------------------------------------
+// AudioView.cs
+//----------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------------------
+
 using UnityEngine;
 
+//----------------------------------------------------------------------------------------------------
 namespace Audio
 {
     public class AudioView : MonoBehaviour
@@ -9,6 +15,7 @@ namespace Audio
         [SerializeField] private AudioSource buttonClickAudioSource;
         [SerializeField] private AudioClip   buttonClickAudioClip;
 
+        //----------------------------------------------------------------------------------------------------
         public void PlayBackgroundMusic(AudioClip clip)
         {
             bgm.clip = clip;
@@ -16,6 +23,7 @@ namespace Audio
             bgm.Play();
         }
 
+        //----------------------------------------------------------------------------------------------------
         public void StopBackgroundMusic()
         {
             bgm.Stop();

@@ -1,7 +1,14 @@
-﻿using System;
+﻿//----------------------------------------------------------------------------------------------------
+// DoorFacade.cs
+//----------------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------------------
+
+using System;
 using UnityEngine;
 using Zenject;
 
+//----------------------------------------------------------------------------------------------------
 namespace Door
 {
     public class DoorFacade : MonoBehaviour, IPoolable<int, int, DoorType, DoorColor, Vector2, IMemoryPool>, IDisposable
@@ -16,11 +23,12 @@ namespace Door
         private Vector2     position;
         private IMemoryPool pool;
 
-        public void OnSpawned(int         doorIndex,
-                              int         switchIndex,
-                              DoorType    type,
-                              DoorColor   color,
-                              Vector2     position,
+        //----------------------------------------------------------------------------------------------------
+        public void OnSpawned(int doorIndex,
+                              int switchIndex,
+                              DoorType type,
+                              DoorColor color,
+                              Vector2 position,
                               IMemoryPool pool)
         {
             this.doorIndex   = doorIndex;
@@ -32,7 +40,6 @@ namespace Door
 
             view.SetPosition(position);
             view.SetSprite(view.GetTargetSprites()[(int)color]);
-
 
             if (type == DoorType.Back)
             {
@@ -53,6 +60,7 @@ namespace Door
             repository.AddDoor(doorIndex, this);
         }
 
+        //----------------------------------------------------------------------------------------------------
         public void OnDespawned()
         {
             repository.RemoveDoor(doorIndex);
@@ -60,6 +68,7 @@ namespace Door
             pool = null;
         }
 
+        //----------------------------------------------------------------------------------------------------
         public void Dispose()
         {
             pool.Despawn(this);
@@ -74,15 +83,13 @@ namespace Door
         public bool      CanInteract()                    => view.CanInteract();
         public bool      IsInteracted()                   => view.IsInteracted();
 
-
         #region Factory & Pool
 
         public class DoorFactory : PlaceholderFactory<int, int, DoorType, DoorColor, Vector2, DoorFacade>
         {
         }
 
-        public class DoorFacadePool : MonoPoolableMemoryPool<int, int, DoorType, DoorColor, Vector2, IMemoryPool,
-            DoorFacade>
+        public class DoorFacadePool : MonoPoolableMemoryPool<int, int, DoorType, DoorColor, Vector2, IMemoryPool, DoorFacade>
         {
         }
 

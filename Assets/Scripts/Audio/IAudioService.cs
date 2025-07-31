@@ -1,5 +1,12 @@
-﻿using UnityEngine;
+﻿//----------------------------------------------------------------------------------------------------
+// IAudioService.cs
+//----------------------------------------------------------------------------------------------------
 
+//----------------------------------------------------------------------------------------------------
+
+using UnityEngine;
+
+//----------------------------------------------------------------------------------------------------
 namespace Audio
 {
     public interface IAudioService
@@ -8,11 +15,11 @@ namespace Audio
         void StopBackgroundMusic();
         void PlayButtonClickAudio();
         void PlayOneShotAudio(AudioSource source, AudioClip clip);
-        void PauseAudio(AudioSource       source);
-        void ResumeAudio(AudioSource      source);
-        void StartAudio(AudioSource       source);
-        void StopAudio(AudioSource        source);
-        void SetBgmVolume(float           volume);
-        void SetSfxVolume(AudioSource     source,float   volume);
+        void PauseAudio(AudioSource source);
+        void ResumeAudio(AudioSource source);
+        void StartAudio(AudioSource source);
+        void StopAudio(AudioSource source);
+        void SetBgmVolume(float volume);
+        void SetSfxVolume(AudioSource source, float volume);
     }
 }
