@@ -6,7 +6,7 @@ Player is introduced to the main mechanics and interactions in Level 1. Player l
 
 ## **Map**
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption><p>Figure 34: Level 1 Map</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (45).png" alt=""><figcaption><p>Figure 34: Level 1 Map</p></figcaption></figure>
 
 ## **Map Description**
 

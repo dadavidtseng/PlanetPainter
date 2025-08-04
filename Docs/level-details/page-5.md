@@ -6,7 +6,7 @@ Level 6 masters all three colors and reinforces the larger map and new playstyle
 
 ## **Map**
 
-<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption><p>Figure 39: Level 6 Map</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption><p>Figure 39: Level 6 Map</p></figcaption></figure>
 
 ## **Map Description**
 

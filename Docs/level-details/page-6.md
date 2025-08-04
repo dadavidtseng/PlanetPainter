@@ -6,7 +6,7 @@ Level 7 allows the player to test all their mastered skills.
 
 ## **Map**
 
-<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption><p>Figure 40: Level 7 Map</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (52).png" alt=""><figcaption><p>Figure 40: Level 7 Map</p></figcaption></figure>
 
 ## **Map Description**
 

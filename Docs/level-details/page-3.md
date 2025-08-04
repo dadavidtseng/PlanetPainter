@@ -6,7 +6,7 @@ Level 4 introduces a new color into the mix.
 
 ## **Map**
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption><p>Figure 37: Level 4 Map</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (49).png" alt=""><figcaption><p>Figure 37: Level 4 Map</p></figcaption></figure>
 
 ## **Map Description**
 

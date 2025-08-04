@@ -6,7 +6,7 @@ Level 2 reinforces the base mechanics while introducing a new color to the mix. 
 
 ## **Map**
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption><p>Figure 35: Level 2 Map</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (47).png" alt=""><figcaption><p>Figure 35: Level 2 Map</p></figcaption></figure>
 
 ## **Map Description**
 

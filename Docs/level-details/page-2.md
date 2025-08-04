@@ -6,7 +6,7 @@ Level 3 allows the player to master the base mechanics while reinforcing the ski
 
 ## **Map**
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption><p>Figure 36: Level 3 Map</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption><p>Figure 36: Level 3 Map</p></figcaption></figure>
 
 ## **Map Description**
 

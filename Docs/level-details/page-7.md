@@ -6,7 +6,7 @@ Level 8 allows the player to test all their mastered skills.
 
 ## **Map**
 
-<figure><img src="../.gitbook/assets/image (28).png" alt=""><figcaption><p>Figure 41: Level 8 Map</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (53).png" alt=""><figcaption><p>Figure 41: Level 8 Map</p></figcaption></figure>
 
 ## **Map Description**
 

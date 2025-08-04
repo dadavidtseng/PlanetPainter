@@ -6,7 +6,7 @@ Level 5 reinforces the 3<sup>rd</sup> new color and introduces the larger maps t
 
 ## **Map**
 
-<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption><p>Figure 38: Level 5 Map</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption><p>Figure 38: Level 5 Map</p></figcaption></figure>
 
 ## **Map Description**
 
