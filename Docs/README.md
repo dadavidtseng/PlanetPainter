@@ -1,18 +1,3 @@
----
-icon: hand-wave
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
----
-
 # Planet Painter's Game Design Document
 
 presented by _Wintermoon Studio_
