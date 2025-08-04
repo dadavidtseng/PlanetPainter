@@ -14,4 +14,4 @@
 
 ### **76-100% (4 Mushrooms) Screen**
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption><p>upd</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption><p>Figure 60: 4 Mushroom End Scene</p></figcaption></figure>
