@@ -44,7 +44,7 @@ namespace TitleScene
         {
             audioService.PlayButtonClickAudio();
 
-            sceneService.LoadScene(2);
+            sceneService.LoadScene(1); // Menu
         }
 
         public void Button_Quit()

@@ -30,7 +30,7 @@ namespace Resources
             if (dataArray.Length == 0)
                 return;
 
-            var instance = EditorUtility.InstanceIDToObject(instanceID);
+            var instance = EditorUtility.EntityIdToObject(instanceID);
 
             if (instance == null)
                 return;

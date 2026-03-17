@@ -65,14 +65,14 @@ namespace MenuScene
 
             gameData.SetDifficulty(levelIndex);
 
-            sceneService.LoadScene(3);
+            sceneService.LoadScene(2); // Game
         }
 
         public void Button_Back()
         {
             audioService.PlayButtonClickAudio();
 
-            sceneService.LoadScene(1);
+            sceneService.LoadScene(0); // Title
         }
 
         public void Button_OpenStoryBoard()

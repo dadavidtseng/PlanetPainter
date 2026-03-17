@@ -18,19 +18,34 @@ namespace Player
 
         private float   moveSpeed = 5f;
         private Vector2 movement;
+        private bool    wasMoving;
 
         public void Tick()
         {
             var targetPosition = new Vector3(view.GetPosition().x, view.GetPosition().y, -10f);
-            
+
             cameraService.SetCameraPosition(targetPosition);
-            
+
             movement.x = Input.GetAxisRaw("Horizontal");
             movement.y = Input.GetAxisRaw("Vertical");
 
             if (movement != Vector2.zero)
             {
+                if (!wasMoving)
+                {
+                    wasMoving = true;
+                    view.SetWalkingAnimationTrigger(true);
+                    view.SetPaintingAnimationTrigger(false);
+                    view.StartStateAudio();
+                }
+
                 MoveCharacter();
+            }
+            else if (wasMoving)
+            {
+                wasMoving = false;
+                view.SetWalkingAnimationTrigger(false);
+                view.StopStateAudio();
             }
         }
 
@@ -38,18 +53,26 @@ namespace Player
         {
             if (movement.x > 0)
             {
+                stateHandler.ChangeState(PlayerState.IdleRight);
+                stateHandler.ChangeState(PlayerState.IsMoving);
                 Move(Vector3.right);
             }
             else if (movement.x < 0)
             {
+                stateHandler.ChangeState(PlayerState.IdleLeft);
+                stateHandler.ChangeState(PlayerState.IsMoving);
                 Move(Vector3.left);
             }
             else if (movement.y > 0)
             {
+                stateHandler.ChangeState(PlayerState.IdleUp);
+                stateHandler.ChangeState(PlayerState.IsMoving);
                 Move(Vector3.up);
             }
             else if (movement.y < 0)
             {
+                stateHandler.ChangeState(PlayerState.IdleDown);
+                stateHandler.ChangeState(PlayerState.IsMoving);
                 Move(Vector3.down);
             }
         }

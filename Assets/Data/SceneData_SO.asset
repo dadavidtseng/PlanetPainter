@@ -13,19 +13,18 @@ MonoBehaviour:
   m_Name: SceneData_SO
   m_EditorClassIdentifier: 
   sceneAssets:
-  - m_AssetGUID: 612b979b4b195864894d51dc5255409d
-    m_SubObjectName: 
-    m_SubObjectType: 
-    m_EditorAssetChanged: 0
   - m_AssetGUID: 9c1578c058b54a84f9a2c51fadb9af26
     m_SubObjectName: 
     m_SubObjectType: 
+    m_SubObjectGUID: 
     m_EditorAssetChanged: 0
   - m_AssetGUID: 42b6e1e8f89d62244a32e6143d8ab3f8
     m_SubObjectName: 
     m_SubObjectType: 
+    m_SubObjectGUID: 
     m_EditorAssetChanged: 0
   - m_AssetGUID: dc28aa519d0b34647a5876312ea1e12c
     m_SubObjectName: 
     m_SubObjectType: 
+    m_SubObjectGUID: 
     m_EditorAssetChanged: 0

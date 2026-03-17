@@ -63,21 +63,21 @@ namespace GameScene
         {
             audioService.PlayButtonClickAudio();
 
-            sceneService.LoadScene(3);
+            sceneService.LoadScene(2);
         }
 
         public void Button_LevelSelect()
         {
             audioService.PlayButtonClickAudio();
 
-            sceneService.LoadScene(2);
+            sceneService.LoadScene(1);
         }
 
         public void Button_MainMenu()
         {
             audioService.PlayButtonClickAudio();
 
-            sceneService.LoadScene(1);
+            sceneService.LoadScene(0);
         }
 
         public void Button_Resume()

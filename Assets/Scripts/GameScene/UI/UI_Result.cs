@@ -144,14 +144,14 @@ namespace GameScene
         {
             audioService.PlayButtonClickAudio();
             gameData.SetDifficulty(gameData.difficulty + 1);
-            sceneService.LoadScene(2);
+            sceneService.LoadScene(1);
         }
 
         public void Button_Restart()
         {
             audioService.PlayButtonClickAudio();
 
-            sceneService.LoadScene(3);
+            sceneService.LoadScene(2);
         }
 
         public void Button_NextLevel()
@@ -160,14 +160,14 @@ namespace GameScene
 
             if (gameData.difficulty == 7)
             {
-                sceneService.LoadScene(1);
+                sceneService.LoadScene(0);
                 return;
-            }    
-            
+            }
+
             Debug.Log($"<color=#ff0000><b>GAME DATA | difficulty: {gameData.difficulty}</b></color>");
 
             gameData.SetDifficulty(gameData.difficulty + 1);
-            sceneService.LoadScene(3);
+            sceneService.LoadScene(2);
 
             Debug.Log($"<color=#ff0000><b>GAME DATA | difficulty: {gameData.difficulty}</b></color>");
         }
