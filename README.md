@@ -1,170 +1,147 @@
-# 🎨 Planet Painter
+# Planet Painter
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![Unity](https://img.shields.io/badge/Unity-6000.1.14f1-brightgreen.svg)](https://unity.com/)
-[![Platform](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com/)
+[![Unity](https://img.shields.io/badge/Unity-6000.3.10f1-57b85a.svg?logo=unity&logoColor=white)](https://unity.com/)
+[![Platform](https://img.shields.io/badge/Target-Android-3ddc84.svg?logo=android&logoColor=white)](https://developer.android.com/)
+[![License](https://img.shields.io/badge/License-Apache--2.0-blue.svg)](LICENSE)
 
-> **Developed by Wintermoon Studio** - A charming color-changing adventure puzzle game
+> A colorful isometric puzzle adventure by Wintermoon Studio.
 
-## 🌟 Game Overview
+Planet Painter is a 2D/isometric Unity game about restoring color to faded planets. Guide Cosmo through compact environmental puzzles, absorb colors, paint the world, and use color-matched interactions to unlock the path forward.
 
-**Planet Painter** is a single-player mobile puzzle game where players solve challenges to progress through planets and restore color to different worlds!
+<p align="center">
+  <img src="Docs/.gitbook/assets/image%20(4)%20(1).png" alt="Planet Painter title screen" width="820">
+</p>
 
-As Cosmo, a color-changing chameleon, players interact with color-absorbing mushrooms that have drained the world's colorful vibrancy. By walking through these mushrooms, players repaint the environment, interact with objects, and complete levels to bring life back to each planet.
+## At a glance
 
-Featuring a cute art style and whimsical fantasy backgrounds, Planet Painter appeals to children and fans of cartoon visuals, offering a charming protagonist and delightful gameplay.
+- Explore eight handcrafted levels across distinct planets.
+- Move with an on-screen D-pad and interact with switches and doors.
+- Absorb red, blue, and yellow colors from Painter Boxes.
+- Paint the ground as Cosmo moves through each level.
+- Match switch colors to their linked doors to open new routes.
+- Avoid Blocker Boxes, and use Water Boxes when you need to clear Cosmo's color.
+- Complete the level by opening its doors; paint the whole map for the highest completion.
 
-## ✨ Core Gameplay
+## Game loop
 
-### 🎮 Game Pillars
-- **Move** - Control the character freely within the game world and interact with different objects
-- **Paint** - When the character has color, paint ground tiles and certain objects to enable specific interactions
-- **Color Change** - The player character's color changes based on interactions with gameplay objects
-- **Cute Post-Apocalyptic World of Color** - A post-apocalyptic world with a cute chameleon as the main character
-
-### 🎯 Game Objectives
-- Explore 8 unique levels across different planets
-- Repaint each planet to restore its vibrancy
-- Complete majority of painting to earn special rewards
-- Solve environmental puzzles using color mechanics
-
-### 🕹️ Interactive Elements
-- **Switch** - Control various mechanisms
-- **Door** - Requires specific conditions to open
-- **Painter Box** - Provides new colors to the player
-- **Blocker Box** - Requires correct color to remove
-- **Water Box** - Clears color from the player character
-
-## 🛠️ Technical Specifications
-
-- **Game Engine**: Unity 6000.1.14f1
-- **Target Platform**: Android
-- **Optimized For**: Lenovo M11 tablets
-- **Screen Resolution**: 1920 x 1200
-- **Camera Perspective**: 45-degree isometric view
-- **Dependency Injection**: Zenject
-- **License**: Apache License 2.0
-
-## 🏗️ Project Structure
-
+```text
+Move → absorb a color → paint the map → recolor switches → open doors → reach the exit
 ```
+
+Cosmo's current color is both a tool and a constraint. It determines which obstacles can be crossed and which switches can be activated, so each level asks you to plan a route through movement, painting, and color changes.
+
+## Getting started
+
+### Requirements
+
+- Unity `6000.3.10f1` (see `ProjectSettings/ProjectVersion.txt`)
+- Unity Hub with the Android Build Support module for Android builds
+- Git
+
+### Open the project
+
+```bash
+git clone https://github.com/dadavidtseng/PlanetPainter.git
+cd PlanetPainter
+```
+
+Open the repository in Unity Hub using the project version above. For a quick editor playthrough, open `Assets/Scenes/Intro.unity` or `Assets/Scenes/Title.unity` and press Play.
+
+### Build for Android
+
+1. Open **File → Build Profiles** (or **Build Settings**, depending on the Unity editor UI).
+2. Select **Android** and switch the active platform if needed.
+3. Confirm the scenes in the build list.
+4. Build, or use **Build and Run** with a connected device.
+
+The project is designed around a tablet experience and has been tested against an Android-oriented 16:10 layout. Other devices and platforms may require additional tuning.
+
+## Scenes
+
+| Scene | Purpose |
+| --- | --- |
+| `Intro` | Optional opening flipbook / intro flow |
+| `Title` | Title screen, settings, credits, and quit flow |
+| `Menu` | Level selection and storyboard access |
+| `Game` | Gameplay, HUD, pause, and level result UI |
+| `Main` | Cross-scene bootstrap and shared services |
+
+The normal flow is `Main → Intro (optional) → Title → Menu → Game`.
+
+## Controls
+
+The game is built for touch-first play:
+
+- **D-pad** — move Cosmo
+- **Interact** — activate a nearby switch or door
+- **Pause** — open the pause menu
+
+The game uses a top-down camera with a faux 45-degree isometric presentation. The camera follows Cosmo while the world is painted on a grid.
+
+## Project structure
+
+```text
 PlanetPainter/
 ├── Assets/
-│   ├── Arts/           # Art assets (animations, audio, images, fonts, etc.)
-│   ├── Data/           # Game data
-│   ├── Materials/      # Material files
-│   ├── Prefabs/        # Prefab objects
-│   ├── Scenes/         # Game scenes
-│   │   ├── Title.unity
-│   │   ├── Menu.unity
-│   │   ├── Main.unity
-│   │   ├── Game.unity
-│   │   └── Intro.unity
-│   ├── Scripts/        # Source code
-│   │   ├── Audio/      # Audio system
-│   │   ├── Game/       # Core game logic
-│   │   ├── Player/     # Player controller
-│   │   ├── Map/        # Map system
-│   │   └── UI/         # User interface
-│   └── Settings/       # Project settings
-├── Docs/               # Game design documents
-├── Builds/             # Build outputs
-└── ProjectSettings/    # Unity project settings
+│   ├── Arts/          # Art, audio, animation, tilemap, and video assets
+│   ├── Data/          # ScriptableObjects and authored game data
+│   ├── Prefabs/       # Reusable gameplay and UI prefabs
+│   ├── Scenes/        # Intro, title, menu, main, and gameplay scenes
+│   └── Scripts/       # Runtime systems, installers, handlers, and UI
+├── Docs/              # Game design and gameplay documentation
+├── Packages/          # Unity package manifest and dependencies
+├── ProjectSettings/   # Unity editor and build configuration
+└── LICENSE            # Apache License 2.0
 ```
 
-## 🎨 Development Team - Wintermoon Studio
+Runtime code is split into small Unity assemblies under `Assets/Scripts`. The main systems are:
 
-| Position | Name | Responsibilities |
-|----------|------|-----------------|
-| Level Designer | Cheng Huang | Level design and balance |
-| Level Designer | Sereen Hamideh | Level design and game flow |
-| Artist | Bess Qu | Visual art and character design |
-| Artist | Ray Yin | Environment art and UI design |
-| Programmer | Yu-Wei Tseng | Game programming and system architecture |
+- **Game** — level bootstrap and gameplay state
+- **Player** — movement, collision, animation, and color state
+- **Map** — tile painting and completion percentage
+- **Switch / Door** — pooled color interactables and lock state
+- **SceneTransition** — scene loading and fade transitions
+- **Audio / Notify / Camera** — shared presentation services
 
-## 🚀 Getting Started
+Extenject (Zenject) composes the services through scene and prefab installers. Zenject signals and UniRx observables connect state changes between gameplay, UI, and presentation layers, while ScriptableObjects hold authored level and scene data.
 
-### System Requirements
-- Unity 6000.1.14f1 or higher
-- Android SDK (for Android builds)
-- Recommended RAM: 8GB or more
+## Documentation
 
-### Installation & Setup
-1. Clone this repository:
-   ```bash
-   git clone [repository-url]
-   cd PlanetPainter
-   ```
+The [`Docs/`](Docs/) directory contains the game's design reference, including:
 
-2. Open the project with Unity Hub
-3. Ensure Android Build Support module is installed
-4. Open the `Assets/Scenes/Title.unity` scene
-5. Click the Play button to start the game
+- [Game Design Document](Docs/README.md)
+- [Gameplay overview](Docs/gameplay/README.md)
+- [Controls](Docs/gameplay/controls.md)
+- [Player objectives](Docs/gameplay/players-objective.md)
+- [Level progression](Docs/world-layout/level-progression.md)
+- [Level details](Docs/level-details/README.md)
+- [Android submission notes](Docs/android-submission.md)
 
-### Building for Android
-1. Go to File > Build Settings
-2. Select Android platform
-3. Configure Player Settings
-4. Click Build or Build and Run
+Repository architecture notes are maintained in [`AGENTS.md`](AGENTS.md) and the module-level guides under `Assets/Scripts/**/AGENTS.md`.
 
-## 📖 Documentation
+## Team
 
-Complete game design documentation is available in the `/Docs` folder, including:
+Planet Painter was developed by Wintermoon Studio:
 
-- [Game Design Document](Docs/README.md) - Complete design overview
-- [Core Concepts](Docs/concept/) - Game philosophy and core mechanics
-- [Gameplay Details](Docs/gameplay/) - Detailed gameplay mechanics
-- [Level Design](Docs/level-details.md) - Level design specifications
-- [Menu System](Docs/menu-system.md) - UI/UX design
+| Role | Contributor |
+| --- | --- |
+| Level design | Cheng Huang |
+| Level design | Sereen Hamideh |
+| Art | Bess Qu |
+| Art | Ray Yin |
+| Programming and architecture | Yu-Wei Tseng |
 
-## 🎯 Target Audience
+## Contributing
 
-- **Primary Audience**: Children and fans of cartoon-style games
-- **Game Genre**: Casual puzzle game
-- **Session Length**: 5-10 minutes per level
-- **Difficulty**: Moderate, with progressive challenge
+Issues and improvements are welcome. Before opening a pull request:
 
-## 🌈 Key Features
+1. Keep changes focused and follow the existing C# and Unity conventions.
+2. Preserve installer bindings, signal contracts, and pooled object lifecycles.
+3. Test the affected scene in Unity Play Mode.
+4. Include a concise description of the change and any platform-specific considerations.
 
-- **Intuitive Touch Controls** - Optimized for touch devices
-- **Rich Visual Feedback** - Vibrant color changes and particle effects
-- **Immersive Audio Design** - Engaging sound effects and music
-- **Progressive Learning Curve** - From simple to complex level design
-- **Achievement System** - Rewards for completing specific objectives
+There is currently no dedicated automated gameplay test suite, so scene-level verification is especially important.
 
-## 📱 Platform Details
+## License
 
-Planet Painter is optimized for Android devices, specifically designed for:
-- Tablet gameplay experience
-- Touch-based interaction
-- Portrait and landscape orientations
-- Various Android screen sizes
-
-## 🔧 Architecture
-
-The project uses a modular architecture with:
-- **Zenject** for dependency injection
-- **Service-oriented design** for game systems
-- **Event-driven communication** between components
-- **Scriptable Objects** for data management
-
-## 📝 License
-
-This project is licensed under the [Apache License 2.0](LICENSE). See the LICENSE file for details.
-
-## 🤝 Contributing
-
-We welcome contributions! Please ensure you:
-
-1. Follow the existing code style
-2. Write appropriate documentation for new features
-3. Test your changes thoroughly
-4. Provide clear commit messages
-
-## 📞 Contact
-
-For questions or suggestions, please contact the Wintermoon Studio development team.
-
----
-
-*Let's bring color back to this faded world together!* 🎨✨
+Planet Painter is distributed under the [Apache License 2.0](LICENSE).
